@@ -1,123 +1,142 @@
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #ffffff;  /* Set background to white */
-    margin: 0;
-    padding: 0;
-}
+/*
+---------------------------------------------------------------------------------
+	STRIPPED DOWN RESUME TEMPLATE
+    html resume
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff;  /* Keep container background white */
-    border-radius: 8px;
-}
+    v0.9: 5/28/09
 
-#header {
-    padding: 20px;
-    background-color: #ffffff;  /* Set header background to white */
-    color: #333;  /* Change text color to dark for contrast */
-    border-radius: 8px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;  /* Optional: subtle border to define the header */
-    display: flex;
+    design and code by: thingsthatarebrown.com 
+                        (matt brown)
+---------------------------------------------------------------------------------
+*/
+
+
+.msg { padding: 10px; background: #222; position: relative; }
+.msg h1 { color: #fff;  }
+.msg a { margin-left: 20px; background: #408814; color: white; padding: 4px 8px; text-decoration: none; }
+.msg a:hover { background: #266400; }
+
+/* //-- yui-grids style overrides -- */
+body { font-family: Georgia; color: #444; }
+#inner { padding: 10px 80px; margin: 80px auto; background: white; border: solid #666; border-width: 8px 0 2px 0; }
+.yui-gf { margin-bottom: 2em; padding-bottom: 2em; border-bottom: 1px solid #ccc; }
+
+/* //-- header, body, footer -- */
+#hd { margin: 2.5em 0 3em 0; padding-bottom: 1.5em; border-bottom: 1px solid #ccc }
+#hd h2 { text-transform: uppercase; letter-spacing: 2px; }
+#bd, #ft { margin-bottom: 2em; }
+
+/* //-- footer -- */
+#ft { padding: 1em 0 5em 0; font-size: 92%; border-top: 1px solid #ccc; text-align: center; }
+#ft p { margin-bottom: 0; text-align: center;   }
+
+/* //-- core typography and style -- */
+#hd h1 { font-size: 48px; text-transform: uppercase; letter-spacing: 3px; }
+h2 { font-size: 152% }
+h3, h4 { font-size: 122%; }
+h1, h2, h3, h4 { color: #333; }
+p { font-size: 100%; line-height: 18px; padding-right: 3em; }
+a { color: #990003 }
+a:hover { text-decoration: none; }
+strong { font-weight: bold; }
+li { line-height: 24px; border-bottom: 1px solid #ccc; }
+p.enlarge { font-size: 144%; padding-right: 6.5em; line-height: 24px; }
+p.enlarge span { color: #000 }
+.contact-info { display:block;margin-top: 7px; }
+.contact-info h3{display:block;
+
+}
+.first h2 { font-style: italic; }
+.last { border-bottom: 0 }
+
+/* --// override to force 1/8th width grids -- */
+.yui-gf{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.yui-gc{
+    display:flex;
+    flex-direction: row!important;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
+}
+.heading.yui-u{
+    flex-basis: 20%;
+    flex-grow:0 !important;
+    flex-shrink: 0 !important;
 }
 
-.header-text {
-    flex-grow: 1;
+.heading.yui-u.first{
+    flex-basis: 55%!important;
+    flex-grow: 0!important;
+    flex-shrink: 3!important;
 }
 
-#header h1 {
-    font-size: 2.5em;
-    margin: 0;
+.yui-u.first{
+    flex-basis: 25%;
+    flex-grow:0 !important;
+    flex-shrink: 0 !important;
 }
 
-#header h2 {
-    font-size: 1.5em;
-    margin-top: 0;
+.yui-u {
+    flex-basis: 25%;
+    flex-grow: 3;
 }
 
-#header .contact-info a {
-    color: #005b5b;  /* Change link color to a darker shade */
-    text-decoration: none;
-    margin-right: 10px;
-    font-weight: bold;
-}
+/* //-- section styles -- */
 
-#social_icon_container {
-    margin-top: 15px;
-}
+a#pdf { display: block; float: left; background: #666; color: white; padding: 6px 50px 6px 12px; margin-bottom: 6px; text-decoration: none;  }
+a#pdf:hover { background: #222; }
 
-.social_icon {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    transition: transform 0.3s ease-in-out;
-}
+.job { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
+.job h4 { position: absolute; top: 2em; right: 2em }
+.job p { margin: 0.75em 0 3em 0; }
 
-.social_icon:hover {
+.last { border: none; }
+
+.skills-list { display:flex;flex-direction: row;flex-wrap: wrap;row-gap: 15px;justify-content:space-between;align-items:center;}
+.skills-list li {flex-basis: 33%; flex-shrink:0;flex-grow:3;margin: 3px 0; padding: 3px 0;align-self: stretch; border-bottom: 1px solid #ccc !important;}
+
+.skills-list li span {font-size: 152%; display: block; margin-bottom: -2px; padding: 0 }
+.methodologies { display:flex;flex-direction: row;}
+.methodology { flex-basis: 25%;  flex-grow:1;}
+.methodology h2 { margin-bottom: 6px; }
+.classes {display:flex;flex-direction: row;flex-wrap: wrap;row-gap: 15px;}
+.class {flex-basis: 40%;column-gap: 10px; flex-shrink:0;flex-grow: 2;}
+.class h2 { margin-bottom: 6px; }
+#srt-ttab { margin-bottom: 100px; text-align: center;  }
+#srt-ttab img.last { margin-top: 20px }
+
+
+#social_icon_container{
+    height:50px;
+}
+.social_icon{
+    width:25px;
+    height:25px;
+    margin:10px;
+    transition: transform 100ms;
+    transition-timing-function: ease-in-out;
+}
+.social_icon:hover{
     transform: scale(1.2);
 }
 
-/* Profile Photo Styles */
-.profile-photo {
-    width: 100px;  /* Smaller profile photo */
-    height: 100px;  /* Smaller profile photo */
-    border-radius: 50%;
+div.profile-image-container{
+
+    width: 150px;  /* Smaller square profile photo */
+    height: 150px;  /* Ensures the height is the same as the width for a square shape */
+    border-radius: 10px;  /* Slightly rounded corners for a more modern look */
     overflow: hidden;
     border: 3px solid #fff;  /* Optional: subtle border around the photo */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Optional: light shadow for visual depth */
 }
+img.profile-image{
 
-.profile-photo img {
     width: 100%;
     height: 100%;
-    object-fit: cover;  /* Ensures the image covers the container without distortion */
-}
-
-main {
-    padding: 20px;
-    background-color: #ffffff;  /* Ensure main content has a white background */
-}
-
-.section {
-    margin-bottom: 30px;
-}
-
-.section h2 {
-    font-size: 1.8em;
-    color: #333;
-    border-bottom: 2px solid #005b5b;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
-}
-
-.section p {
-    font-size: 1.1em;
-    line-height: 1.6;
-}
-
-.job h3 {
-    font-size: 1.2em;
-    color: #005b5b;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    border-top: 2px solid #444;
-}
-
-footer a {
-    color: #ffc107;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+    object-fit: cover;
 }
