@@ -1,146 +1,123 @@
-<html>
-<head>
-    <title>Tianling Xie</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <link rel="stylesheet" type="text/css" href="mycss.css" media="all" />
-</head>
-<body>
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;  /* Set background to white */
+    margin: 0;
+    padding: 0;
+}
 
-<div id="doc2" class="container">
-    <div id="inner">
-    
-        <header id="header">
-            <div class="header-content">
-                <div class="header-text">
-                    <h1>Tianling Xie</h1>
-                    <h2>PhD Candidate, Instructor</h2>
-                    <div class="contact-info">
-                        <a id="pdf" href="CV_Tianling Xie_20241104.pdf" download>Download CV</a>
-                        <a href="mailto:tianling.xie@rockets.utoledo.edu">tianling.xie@rockets.utoledo.edu</a>
-                        <div id="social_icon_container">
-                            <a href="https://scholar.google.com/citations?user=UtLHAr8AAAAJ&hl=en">
-                                <img class="social_icon" src="googlescholar.webp" alt="Google Scholar">
-                            </a>
-                            <a href="https://www.researchgate.net/profile/Tianling-Xie">
-                                <img class="social_icon" src="researchgate.webp" alt="ResearchGate">
-                            </a>
-                            <a href="https://www.linkedin.com/in/tianling-xie-24b206125/">
-                                <img class="social_icon" src="linkdln.webp" alt="LinkedIn">
-                            </a>
-                            <a href="https://github.com/LynnXie00">
-                                <img class="social_icon" src="github.webp" alt="GitHub">
-                            </a>
-                        </div>
-                    </div>
-                </div>
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;  /* Keep container background white */
+    border-radius: 8px;
+}
 
-                <!-- Profile Photo -->
-                <div class="profile-photo">
-                    <img src="profile.jpg" alt="Tianling Xie" />
-                </div>
-            </div>
-        </header>
+#header {
+    padding: 20px;
+    background-color: #ffffff;  /* Set header background to white */
+    color: #333;  /* Change text color to dark for contrast */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;  /* Optional: subtle border to define the header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        <main id="main-content">
-            <section class="section">
-                <h2>Research Interests</h2>
-                <p>Social Chatbot, Persuasive Chatbot, Artificial Intelligence (AI) Adoption, Human-AI Interaction, Human-Computer Behavior Studies</p>
-            </section>
+.header-text {
+    flex-grow: 1;
+}
 
-            <section class="section">
-                <h2>Methodologies</h2>
-                <div class="methodologies">
-                    <div class="methodology">
-                        <h3>Interview</h3>
-                        <p>Interview participants with grounded theory method.</p>
-                    </div>
-                    <div class="methodology">
-                        <h3>Survey</h3>
-                        <p>Collect survey data and analyze with structural equation modeling method.</p>
-                    </div>
-                    <div class="methodology">
-                        <h3>Experiment</h3>
-                        <p>Examine causal relationship by manipulating factors in lab or online environments.</p>
-                    </div>
-                    <div class="methodology">
-                        <h3>Text Mining</h3>
-                        <p>Parse textual data from the internet and analyze trends and patterns using R packages.</p>
-                    </div>
-                </div>
-            </section>
+#header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
 
-            <section class="section">
-                <h2>Featured Research</h2>
-                <div class="job">
-                    <h3><a href="https://www.sciencedirect.com/science/article/abs/pii/S0747563222004204">Exploring Relationship Development with Social Chatbots: A Mixed-Method Study of Replika</a></h3>
-                    <p><strong>Authors:</strong> Iryna Pentina, Tyler Hancock, Tianling Xie (2023)</p>
-                    <p>This mixed-method investigation empirically tests a human-AI relationship development model in the context of social chatbots.</p>
-                </div>
-            </section>
+#header h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
 
-            <section class="section">
-                <h2>Teaching Interests</h2>
-                <p>Business analytics, business statistics, database, website development, supply chain management, Excel applications.</p>
-            </section>
+#header .contact-info a {
+    color: #005b5b;  /* Change link color to a darker shade */
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+}
 
-            <section class="section">
-                <h2>Classes Taught</h2>
-                <ul class="classes">
-                    <li>Business Analytics</li>
-                    <li>Business Statistics</li>
-                    <li>Micro-computer Applications</li>
-                    <li>Information Technology Management</li>
-                    <li>Principles of Manufacturing & Service Systems</li>
-                </ul>
-            </section>
+#social_icon_container {
+    margin-top: 15px;
+}
 
-            <section class="section">
-                <h2>Technical Skills</h2>
-                <ul class="skills-list">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li class="last">JavaScript</li>
-                </ul>
-                <ul class="skills-list">
-                    <li>Python</li>
-                    <li>C#</li>
-                    <li class="last">VBA</li>
-                </ul>
-                <ul class="skills-list">
-                    <li>SPSS</li>
-                    <li>AMOS</li>
-                    <li class="last">R</li>
-                </ul>
-            </section>
+.social_icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out;
+}
 
-            <section class="section">
-                <h2>Awards</h2>
-                <ul>
-                    <li>Pacemaker Award – <i>University of Toledo</i></li>
-                    <li>Best Paper Nomination – <i>The 55th Hawaii International Conference on System Sciences</i></li>
-                    <li>Outstanding Student Research Paper – <i>Midwest Business Administration Association 2020 Conference</i></li>
-                </ul>
-            </section>
+.social_icon:hover {
+    transform: scale(1.2);
+}
 
-            <section class="section">
-                <h2>Education</h2>
-                <p><strong>University of Toledo</strong> - Toledo, Ohio</p>
-                <ul>
-                    <li>PhD - Manufacturing and Technology Management (Current)</li>
-                    <li>Master in Accountancy</li>
-                </ul>
-            </section>
+/* Profile Photo Styles */
+.profile-photo {
+    width: 100px;  /* Smaller profile photo */
+    height: 100px;  /* Smaller profile photo */
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #fff;  /* Optional: subtle border around the photo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-        </main>
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures the image covers the container without distortion */
+}
 
-        <footer id="footer">
-            <p>Tianling Xie &mdash; <a href="mailto:tianling.xie@rockets.utoledo.edu">tianling.xie@rockets.utoledo.edu</a></p>
-        </footer>
+main {
+    padding: 20px;
+    background-color: #ffffff;  /* Ensure main content has a white background */
+}
 
-    </div>
-</div>
+.section {
+    margin-bottom: 30px;
+}
 
-</body>
-</html>
+.section h2 {
+    font-size: 1.8em;
+    color: #333;
+    border-bottom: 2px solid #005b5b;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.job h3 {
+    font-size: 1.2em;
+    color: #005b5b;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    border-top: 2px solid #444;
+}
+
+footer a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
